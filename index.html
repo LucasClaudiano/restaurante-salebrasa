@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top pt-4" id="cabecalho">
+        <!-- o comando acima navibar-expand-lg vai fazer com que o conteúdo fique responsivo de maneira mais simples -->
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Sal e Brasa</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold" >
+                        <a href="#sobre-o-restaurante" class="nav-link ">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide itemteste" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"data-bs-interval="3000">
+                        <img src="images/slides/slide1.png" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item "data-bs-interval="3000">
+                        <img src="images/slides/slide2.png" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item "data-bs-interval="3000">
+                        <img src="images/slides/slide3.png" alt="Foto do espaço interno do restaurante">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button"data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre<span class="text-colored"> o restaurante</span></h2>
+                            <p>
+                                Desde 1884, o Sal e Brasa lançou-se no mercado com uma estratégia inovadora, servindo o que há de mais saboroso e variado da comida típica da fazenda. 
+                                Hoje, o Sal e Brasa é nacionalmente reconhecido por seus produtos de excelente qualidade e com sabor genuinamente brasileiro. 
+                                Receitas próprias e exclusivas foram desenvolvidas ao longo dos anos, procurando atender o gosto e o paladar brasileiro.                             </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Tudo isso em um espaço incrível e modernizado para trazer o melhor sentimento de conforto e aconchego. Temos uma ampla área kids com cuidadores especializados, garantindo a segurança e atenção necessária.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">a equipe</span></h3>
+                            
+                            <p>
+                                Nossa equipe possui uma experiencia de mais de vinte anos no mercado, possuído os melhores critérios de sabor e criatividade dos pratos.                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row ">
+                    <h2 class="section-title text-center">Para todas<span class="text-colored"> as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/aniversario.jpg" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4"> 
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários</h3>
+                        <p>
+                            Venha celebrar seu aniversário junto a sua família , saboreando o melhor da culinária .                       </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/casamento.jpg" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Repção para casamentos</h3>
+                        <p>
+                            Cada detalhe pensado de maneira especial para você, esse momento marcante será perfeito como o planejado.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/confraternizacoes.jpg" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternisações</h3>
+                        <p>
+                            Venha fazer a suas confraternisações conosco.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca Cola</h5>
+                                        <p>
+                                            Coca-cola em lata/coca zero/ks. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
+                                        <p>
+                                            Também temos outras opções. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/cafe.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Café</h5>
+                                        <p>
+                                            Café coado na hora . 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="Cerveja">
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>
+                                            Cervejas artesanal , rótulos internacionais e chopp. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Vinhos</h5>
+                                        <p>
+                                            Vinho italianos , argentinos , chilenos e muitos outros . A melhor carteira de vinhos da região. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/whisky.webp" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Whisky</h5>
+                                        <p>
+                                            Enfumaçado , doce , single malt e outras diversas modalidades. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/gin.jpeg" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Gin</h5>
+                                        <p>
+                                            Gin de qualidade, as melhores marcas do mercado. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/tabua-bonita.webp" alt="Tábua de frios">
+                                        <h5 class="text-colored fw-bold mt-2">Tábua de frios</h5>
+                                        <p>
+                                            Queijos , salames , frutas e geleias. 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/Minibruschetta italiana.jpeg" alt="Minibruschetta italiana">
+                                        <h5 class="text-colored fw-bold mt-2">Minibruschetta italiana</h5>
+                                        <p>
+                                            Prato especial feito com minipães franceses e queijo parmesão . 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/chips-legumes-molho.webp" alt="Chips">
+                                        <h5 class="text-colored fw-bold mt-2">Chips com legumes</h5>
+                                        <p>
+                                            Chips de mandioquinha com um toque especial de abobrinha e iorgute. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/barquinha.webp" alt="Barquinha de salpicão">
+                                        <h5 class="text-colored fw-bold mt-2">Barquinha de salpicão</h5>
+                                        <p>
+                                            Barquinha de salpicão servido em barquinhas de mandioquinha. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="Pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Temos diversos sabores e tamanhos. 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="Salmão">
+                                        <h5 class="text-colored fw-bold mt-2">Salmão</h5>
+                                        <p>
+                                            Salmão grelhado ou assado acompanhado de legumes e saladas de escolha do cliente. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/arroz de pato.jpg" alt="Arroz de Pato">
+                                        <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Prato português de um sabor incrível e ideal para quem está em família. 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/Paillard de filet.jpg" alt=" Paillard de filet">
+                                        <h5 class="text-colored fw-bold mt-2"> Paillard de filet</h5>
+                                        <p>
+                                            Paillard de filet, recheado com queijo emmental, acompanha risoto de palmito com alho poró.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/bolo.jpg" alt="Bolo">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo</h5>
+                                        <p>
+                                            Bolos e tortas de vários sabores (sob consulta). 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/cupcake.jpg" alt="cupcake">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake</h5>
+                                        <p>
+                                            Cupcakes (chocolate, limão e ninho). 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <section id="fale-conosco" class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-5">
+                                <form onsubmit="return confirmacao()">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label fw-bold text-colored">Seu nome</label>
+                                        <input type="text" id="nome" class="form-control" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                        <input type="email" id="email" class="form-control" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                        <input type="tel" id="telefone" class="form-control"required >
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                        <textarea  id="mensagem" class="form-control" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn fw-bold">Enviar</button>
+                                </form>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <h3 class="section-title fs-4 text-colored">
+                                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                                        Redes Sociais
+                                    </h3>
+                                    <ul class="social-links">
+                                        <li class="fs-5">
+                                            <a href="#">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                        </li>
+                                        <li class="fs-5  ms-1 me-1">
+                                            <a href="#">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                            </a>
+                                        </li>
+                                        <li class="fs-5">
+                                            <a href="#">
+                                            <i class="bi bi-whatsapp text-colored"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row mt-4">
+                                    <h3 class="section-title fs-4 text-colored">
+                                        <i class="bi bi-cursor-fill"></i>
+                                        Endereço
+                                    </h3>
+                                    <p>
+                                        Rua Teste Exemplo n° 145, Bairro Bootstrap - São Paulo - SP 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+	//Telefone
+	$("#telefone").mask("(99) 99999-9999");
+
+});
+</script>
+</body>
+</html>
